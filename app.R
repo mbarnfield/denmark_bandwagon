@@ -977,7 +977,7 @@ server <- function(input, output) {
         switched_to_dynamic = as_factor(paste0("Switched-to party change in polling: ", switched_to_dynamic)),
         switched_from_dynamic = as_factor(paste0("Switched-from party change in polling: ", switched_from_dynamic)),
         sn_interaction = interaction(polls, sn_emphasised),
-        dn_interaction = interaction(change, dn_emphasised),
+        dn_interaction = interaction(change, dn_emphasised)
       ) %>%
       select(switched_to,
              switched_from,
